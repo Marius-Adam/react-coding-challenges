@@ -1,10 +1,8 @@
 .app {
-  padding: 10%;
-  max-width: 1000px;
+  padding: 10% 15%;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin: auto;
   box-sizing: content-box;
 
   &__dark-mode-btn {
@@ -17,7 +15,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    color: #000000;
     &:focus {
       outline: none;
     }
@@ -26,5 +24,11 @@
   .buttons > .button {
     height: 30px;
     width: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    padding: 10%;
   }
 }
